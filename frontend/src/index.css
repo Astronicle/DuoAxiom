@@ -1,0 +1,15 @@
+@tailwind utilities;
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Questrial";
+  src: url("./assets/Questrial-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: "Questrial", sans-serif;
+  background-color: #dbfbff;
+}
