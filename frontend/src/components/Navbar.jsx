@@ -17,6 +17,7 @@ function Navbar() {
           <div className="cursor-pointer p-3">Sign Up</div>
         </div>
       </div>
+      <br></br><br></br><br></br><br></br>
     </>
   );
 }
