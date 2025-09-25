@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div className="pt-22">
+      <div className="pt-20">
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/login" element={<LoginPage />} />

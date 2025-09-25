@@ -19,7 +19,7 @@ const LoginForm = () => {
         />
         <button
           type="submit"
-          className="rounded-lg bg-[#6dddea] py-3 text-lg font-bold text-white transition duration-200 hover:bg-[#4dd3e3]"
+          className="cursor-pointer rounded-lg bg-[#6dddea] py-3 text-lg font-bold text-white transition duration-200 hover:bg-[#4dd3e3]"
         >
           Login
         </button>
