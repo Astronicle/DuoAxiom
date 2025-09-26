@@ -1,8 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const SignupForm = () => {
   return (
-    <div className="flex flex-col rounded-lg bg-white px-8 py-12 shadow-lg">
+    <motion.div initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }} className="flex flex-col rounded-lg bg-white px-8 py-12 shadow-lg">
       <h2 className="mb-8 text-center text-3xl font-bold text-gray-800">
         Sign Up
       </h2>
@@ -35,7 +38,7 @@ const SignupForm = () => {
           Login
         </a>
       </p>
-    </div>
+    </motion.div>
   );
 };
 
