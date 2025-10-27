@@ -39,7 +39,7 @@
   align-items: center;
   color: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   user-select: none;
 }
 
@@ -55,3 +55,4 @@
   user-select: none;
   font-size: xx-large;
 }
+
