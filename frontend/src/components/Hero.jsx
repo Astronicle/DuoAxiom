@@ -15,7 +15,7 @@ const Hero = () => {
 
       setTimeout(() => {
         setI((prevI) => (prevI + 1) % s.length);
-      }, 750);
+      }, 380);
     }, 1000); // Flip every 1s
 
     return () => clearInterval(interval);
@@ -25,17 +25,17 @@ const Hero = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between min-h-screen bg-gray-100">
-        <div className="flex-col w-100">
-          <div className="mb-10 bg-[#6dddea] p-10">Button 1</div>
-          <div className="mb-10 bg-[#6dddea] p-10">Button 2</div>
-          <div className="mb-10 bg-[#6dddea] p-10">Button 3</div>
+      <div className="flex min-h-screen items-center justify-between bg-gray-100">
+        <div className="w-100 flex-col">
+          <div className="mb-10 rounded-r-2xl bg-[#6dddea] p-10">Button 1</div>
+          <div className="mb-10 rounded-r-2xl bg-[#ff8dbb] p-10">Button 2</div>
+          <div className="mb-10 rounded-r-2xl bg-[#6dddea] p-10">Button 3</div>
         </div>
         <div className="hero-container">
           <motion.div
             initial={{ opacity: 0, rotateY: 0 }}
             animate={{ opacity: 1, rotateY: isFlipped ? 180 : 0 }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
             className="flip-card"
           >
             <div className="flip-card-inner">
@@ -50,10 +50,10 @@ const Hero = () => {
             </div>
           </motion.div>
         </div>
-        <div className="flex-col w-100">
-          <div className="mb-10 bg-[#6dddea] p-10">Button 1</div>
-          <div className="mb-10 bg-[#6dddea] p-10">Button 2</div>
-          <div className="mb-10 bg-[#6dddea] p-10">Button 3</div>
+        <div className="w-100 flex-col">
+          <div className="mb-10 rounded-l-2xl bg-[#6dddea] p-10">Button 1</div>
+          <div className="mb-10 rounded-l-2xl bg-[#ff8dbb] p-10">Button 2</div>
+          <div className="mb-10 rounded-l-2xl bg-[#6dddea] p-10">Button 3</div>
         </div>
       </div>
     </>

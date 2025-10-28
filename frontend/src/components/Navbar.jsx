@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/duoAxiom.png";
 import { Link } from "react-router-dom";
+import Shuffle from "./styles/shuffle.js";
 
 function Navbar() {
   return (
@@ -9,32 +10,45 @@ function Navbar() {
         <div className="flex items-center">
           <img className="h-12 w-12" src={logo} alt="DuoAxiom Logo" />
           <Link to="/">
-            <div>Duo Axiom</div>
+            <Shuffle
+              text="Duo Axiom"
+              shuffleDirection="right"
+              duration={1.0}
+              animationMode="evenodd"
+              shuffleTimes={1}
+              ease="power3.out"
+              stagger={0.03}
+              threshold={0.1}
+              triggerOnce={true}
+              triggerOnHover={true}
+              respectReducedMotion={true}
+              loop={true}
+            />
           </Link>
         </div>
         <div className="flex items-center">
           <Link to="/">
-            <div className="h-20 cursor-pointer border-none border-b-white border-b-6 p-6 transition-all duration-500 hover:border-solid hover:bg-[#6dddea]">
+            <div className="h-20 cursor-pointer border-b-6 border-none border-b-white p-6 transition-all duration-500 hover:border-solid hover:bg-[#6dddea]">
               Home
             </div>
           </Link>
           <Link to="/about">
-            <div className="h-20 cursor-pointer border-none border-b-white border-b-6 p-6 transition-all duration-500 hover:border-solid hover:bg-[#6dddea]">
+            <div className="h-20 cursor-pointer border-b-6 border-none border-b-white p-6 transition-all duration-500 hover:border-solid hover:bg-[#6dddea]">
               About
             </div>
           </Link>
           <Link to="/contact">
-            <div className="h-20 cursor-pointer border-none border-b-white border-b-6 p-6 transition-all duration-500 hover:border-solid hover:bg-[#6dddea]">
+            <div className="h-20 cursor-pointer border-b-6 border-none border-b-white p-6 transition-all duration-500 hover:border-solid hover:bg-[#6dddea]">
               Contact
             </div>
           </Link>
           <Link to="/login">
-            <div className="h-20 cursor-pointer border-none border-b-white border-b-6 p-6 transition-all duration-500 hover:border-solid hover:bg-[#6dddea]">
+            <div className="h-20 cursor-pointer border-b-6 border-none border-b-white p-6 transition-all duration-500 hover:border-solid hover:bg-[#6dddea]">
               Login
             </div>
           </Link>
           <Link to="/signup">
-            <div className="h-20 cursor-pointer border-none border-b-white border-b-6 p-6 transition-all duration-500 hover:border-solid hover:bg-[#6dddea]">
+            <div className="h-20 cursor-pointer border-b-6 border-none border-b-white p-6 transition-all duration-500 hover:border-solid hover:bg-[#6dddea]">
               Sign Up
             </div>
           </Link>
